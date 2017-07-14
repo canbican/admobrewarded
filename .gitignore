@@ -1,0 +1,10 @@
+/.classpath
+/.project
+/.settings
+/bin
+/android/build
+/android/libs
+/android/dist/*.jar
+/android/build.properties
+/android/java-sources.txt
+/build
