@@ -5,22 +5,27 @@ var label = Ti.UI.createLabel();
 win.add(label);
 win.open();
 
+// This is a test id, replace with a real one in production.
+var id = (Ti.Platform.osname == 'android') ? "ca-app-pub-3940256099942544/5224354917" : "ca-app-pub-3940256099942544/1712485313";
 
-// Make sure you add the following to your tiapp.xml
+// Make sure you add the following to your tiapp.xml (for Android)
 //  <android xmlns:android="http://schemas.android.com/apk/res/android">
 //    <manifest>
 //      <application>
-//        <meta-data android:name="com.google.android.gms.version" android:value="@integer/google_play_services_version"/>
+//        <meta-data android:name="com.google.android.gms.version"
+// android:value="@integer/google_play_services_version"/>
 //        ...
 //      </application>
 //    </manifest>
 // </android>
 var admobrewarded = require('net.birdirbir.admobrewarded');
 
-// This is a test id, replace with a real one in production.
-var instance = admobrewarded.getRewardedVideoAdInstance("ca-app-pub-3940256099942544/5224354917");
+var instance = admobrewarded.createAd({
+  adUnitID : id
+});
 
-// Add listeners. Note that you need to show the ad after the AD_REWARDED_VIDEO_AD_LOADED event.
+// Add listeners. Note that you need to show the ad after the
+// AD_REWARDED_VIDEO_AD_LOADED event.
 instance.addEventListener(admobrewarded.AD_REWARDED, function(e) {
   Ti.API.warn('reward amount: ', e.rewardAmount);
   Ti.API.warn('reward type: ', e.rewardType);
@@ -36,7 +41,7 @@ instance.addEventListener(admobrewarded.AD_REWARDED_VIDEO_FAILED_TO_LOAD, functi
 });
 instance.addEventListener(admobrewarded.AD_REWARDED_VIDEO_AD_LOADED, function() {
   Ti.API.warn('video ad loaded');
-  admobrewarded.show();
+  instance.show();
 });
 instance.addEventListener(admobrewarded.AD_REWARDED_VIDEO_AD_OPENED, function() {
   Ti.API.warn('video ad opened');
@@ -46,4 +51,4 @@ instance.addEventListener(admobrewarded.AD_REWARDED_VIDEO_STARTED, function() {
 });
 
 // Load the ad.
-admobrewarded.loadAd();
+instance.loadAd();

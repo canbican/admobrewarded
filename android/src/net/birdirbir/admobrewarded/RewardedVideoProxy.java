@@ -7,6 +7,7 @@ import org.appcelerator.kroll.common.Log;
 
 import android.content.Context;
 
+import com.google.android.gms.ads.AdRequest;
 import com.google.android.gms.ads.reward.RewardItem;
 import com.google.android.gms.ads.reward.RewardedVideoAd;
 import com.google.android.gms.ads.reward.RewardedVideoAdListener;
@@ -89,4 +90,39 @@ public class RewardedVideoProxy extends KrollProxy implements
 		return this.context;
 	}
 
+	@Kroll.method
+	public void loadAd() {
+		Log.d(AdmobrewardedModule.LCAT, "enter loadAd");
+		this.ad.loadAd(this.adUnitID, new AdRequest.Builder().build());
+	}
+
+	@Kroll.method
+	public boolean isLoaded() {
+		Log.d(AdmobrewardedModule.LCAT, "enter isLoaded");
+		return this.ad.isLoaded();
+	}
+
+	@Kroll.method
+	public void resume() {
+		Log.d(AdmobrewardedModule.LCAT, "enter resume");
+		this.ad.resume(this.getContext());
+	}
+
+	@Kroll.method
+	public void pause() {
+		Log.d(AdmobrewardedModule.LCAT, "enter pause");
+		this.ad.pause(this.getContext());
+	}
+
+	@Kroll.method
+	public void destroy() {
+		Log.d(AdmobrewardedModule.LCAT, "enter destroy");
+		this.ad.destroy(this.getContext());
+	}
+
+	@Kroll.method
+	public void show() {
+		Log.d(AdmobrewardedModule.LCAT, "enter show");
+		this.ad.show();
+	}
 }

@@ -8,8 +8,11 @@
  */
 package net.birdirbir.admobrewarded;
 
+import java.util.HashMap;
+
 import net.birdirbir.admobrewarded.RewardedVideoProxy;
 
+import org.appcelerator.kroll.KrollDict;
 import org.appcelerator.kroll.KrollModule;
 import org.appcelerator.kroll.annotations.Kroll;
 import org.appcelerator.titanium.TiApplication;
@@ -17,7 +20,6 @@ import org.appcelerator.kroll.common.Log;
 
 import android.content.Context;
 
-import com.google.android.gms.ads.AdRequest;
 import com.google.android.gms.ads.MobileAds;
 import com.google.android.gms.ads.reward.RewardedVideoAd;
 import com.google.android.gms.common.GoogleApiAvailability;
@@ -44,19 +46,6 @@ public class AdmobrewardedModule extends KrollModule {
 	@Kroll.constant
 	public static final String AD_REWARDED_VIDEO_STARTED = "ad_rewarded_video_started";
 
-	@Kroll.constant
-	public static final int SUCCESS = 0;
-	@Kroll.constant
-	public static final int SERVICE_MISSING = 1;
-	@Kroll.constant
-	public static final int SERVICE_UPDATING = 18;
-	@Kroll.constant
-	public static final int SERVICE_VERSION_UPDATE_REQUIRED = 2;
-	@Kroll.constant
-	public static final int SERVICE_DISABLED = 3;
-	@Kroll.constant
-	public static final int SERVICE_INVALID = 9;
-
 	public AdmobrewardedModule() {
 		super();
 	}
@@ -70,7 +59,10 @@ public class AdmobrewardedModule extends KrollModule {
 	}
 
 	@Kroll.method(runOnUiThread = true)
-	public RewardedVideoProxy getRewardedVideoAdInstance(String adUnitID) {
+	public RewardedVideoProxy createAd(@SuppressWarnings("rawtypes") HashMap hm) {
+		@SuppressWarnings("unchecked")
+		KrollDict args = new KrollDict(hm);
+		String adUnitID = args.getString("adUnitID");
 		Log.d(LCAT, "enter getRewardedVideoAdInstance");
 		if (instance == null) {
 			Log.d(LCAT, "creating new rewarded video instance");
@@ -85,42 +77,5 @@ public class AdmobrewardedModule extends KrollModule {
 			r.setRewardedVideoAdListener(instance);
 		}
 		return instance;
-	}
-
-	@Kroll.method
-	public void loadAd() {
-		Log.d(LCAT, "enter loadAd");
-		instance.getAd().loadAd(instance.getAdUnitId(),
-				new AdRequest.Builder().build());
-	}
-
-	@Kroll.method
-	public boolean isLoaded() {
-		Log.d(LCAT, "enter isLoaded");
-		return instance.getAd().isLoaded();
-	}
-
-	@Kroll.method
-	public void resume() {
-		Log.d(LCAT, "enter resume");
-		instance.getAd().resume(instance.getContext());
-	}
-
-	@Kroll.method
-	public void pause() {
-		Log.d(LCAT, "enter pause");
-		instance.getAd().pause(instance.getContext());
-	}
-
-	@Kroll.method
-	public void destroy() {
-		Log.d(LCAT, "enter destroy");
-		instance.getAd().destroy(instance.getContext());
-	}
-
-	@Kroll.method
-	public void show() {
-		Log.d(LCAT, "enter show");
-		instance.getAd().show();
 	}
 }
