@@ -3,6 +3,9 @@
 /.settings
 /bin
 /android/build
+/ios/build
+/ios/admobrewarded-ios.xcodeproj/xcuserdata
+/ios/*.zip
 /android/libs
 /android/dist/*.jar
 /android/build.properties

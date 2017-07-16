@@ -1,0 +1,18 @@
+#
+# this is your module manifest and used by Titanium
+# during compilation, packaging, distribution, etc.
+#
+version: 0.2
+apiversion: 2
+architectures: armv7 arm64 i386 x86_64
+description: TODO
+author: Can Bican
+license: TODO
+copyright: 2017
+
+# these should not be edited
+name: admobrewarded-ios
+moduleid: net.birdirbir.admobrewarded
+guid: 1718e13a-2279-4630-8b5b-77821fa685a6
+platform: iphone
+minsdk: 6.1.1.GA

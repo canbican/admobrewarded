@@ -1,0 +1,499 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		36A2D4091F1BB2A3008202CA /* GoogleMobileAds.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 36A2D4081F1BB2A3008202CA /* GoogleMobileAds.framework */; };
+		36C9C5571F1C30100004001B /* NetBirdirbirAdmobrewardedAdProxy.h in Headers */ = {isa = PBXBuildFile; fileRef = 36C9C5551F1C30100004001B /* NetBirdirbirAdmobrewardedAdProxy.h */; };
+		36C9C5581F1C30100004001B /* NetBirdirbirAdmobrewardedAdProxy.m in Sources */ = {isa = PBXBuildFile; fileRef = 36C9C5561F1C30100004001B /* NetBirdirbirAdmobrewardedAdProxy.m */; };
+		36D23E821F1B9BE600476567 /* EventKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 36D23E811F1B9BE600476567 /* EventKit.framework */; };
+		36D23E841F1B9BEE00476567 /* EventKitUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 36D23E831F1B9BEE00476567 /* EventKitUI.framework */; };
+		36D23E881F1BA1C800476567 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 36D23E871F1BA1C800476567 /* UIKit.framework */; };
+		36D23E8A1F1BA1CF00476567 /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 36D23E891F1BA1CF00476567 /* WebKit.framework */; };
+		36D6E1241F1B9014004467C7 /* NetBirdirbirAdmobrewarded_Prefix.pch in Headers */ = {isa = PBXBuildFile; fileRef = 36D6E1231F1B9014004467C7 /* NetBirdirbirAdmobrewarded_Prefix.pch */; };
+		36E0F9D51F1B8DD900D1EDFA /* NetBirdirbirAdmobrewardedModule.h in Headers */ = {isa = PBXBuildFile; fileRef = 36E0F9D11F1B8DD900D1EDFA /* NetBirdirbirAdmobrewardedModule.h */; };
+		36E0F9D61F1B8DD900D1EDFA /* NetBirdirbirAdmobrewardedModuleAssets.h in Headers */ = {isa = PBXBuildFile; fileRef = 36E0F9D21F1B8DD900D1EDFA /* NetBirdirbirAdmobrewardedModuleAssets.h */; };
+		36E0F9D71F1B8DD900D1EDFA /* NetBirdirbirAdmobrewardedModule.m in Sources */ = {isa = PBXBuildFile; fileRef = 36E0F9D31F1B8DD900D1EDFA /* NetBirdirbirAdmobrewardedModule.m */; };
+		36E0F9D81F1B8DD900D1EDFA /* NetBirdirbirAdmobrewardedModuleAssets.m in Sources */ = {isa = PBXBuildFile; fileRef = 36E0F9D41F1B8DD900D1EDFA /* NetBirdirbirAdmobrewardedModuleAssets.m */; };
+		3A4F268F1C68DDF7003E06CF /* iAd.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3A4F268E1C68DDF7003E06CF /* iAd.framework */; };
+		AACBBE4A0F95108600F1A2B1 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AACBBE490F95108600F1A2B1 /* Foundation.framework */; };
+		CE6C17A01982D1170017C788 /* AdSupport.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE6C179F1982D1170017C788 /* AdSupport.framework */; };
+		CE6C17A21982D12D0017C788 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE6C17A11982D12D0017C788 /* AVFoundation.framework */; };
+		CE6C17A41982D13A0017C788 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE6C17A31982D13A0017C788 /* CoreGraphics.framework */; };
+		CE6C17A61982D1660017C788 /* CoreTelephony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE6C17A51982D1660017C788 /* CoreTelephony.framework */; };
+		CE6C17A81982D1780017C788 /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE6C17A71982D1780017C788 /* StoreKit.framework */; };
+		CE6C17AA1982D1870017C788 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE6C17A91982D1870017C788 /* SystemConfiguration.framework */; };
+		DAD5D7CF12527E11009CF986 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DAD5D7CE12527E11009CF986 /* AudioToolbox.framework */; };
+		DAD5D7D512527E2F009CF986 /* MessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DAD5D7D412527E2F009CF986 /* MessageUI.framework */; };
+		DB07E8B81E8010000008C1E1 /* CoreMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DB07E8B61E8010000008C1E1 /* CoreMedia.framework */; };
+		DB07E8B91E8010000008C1E1 /* CoreMotion.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DB07E8B71E8010000008C1E1 /* CoreMotion.framework */; };
+		DB07E8BB1E80100D0008C1E1 /* CoreVideo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DB07E8BA1E80100D0008C1E1 /* CoreVideo.framework */; };
+		DB07E8BD1E80101A0008C1E1 /* GLKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DB07E8BC1E80101A0008C1E1 /* GLKit.framework */; };
+		DB07E8BF1E80101F0008C1E1 /* JavaScriptCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DB07E8BE1E80101F0008C1E1 /* JavaScriptCore.framework */; };
+		DB07E8C01E80103C0008C1E1 /* MediaPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DAD5D7D112527E1A009CF986 /* MediaPlayer.framework */; };
+		DB07E8C21E80104D0008C1E1 /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DB07E8C11E80104D0008C1E1 /* MobileCoreServices.framework */; };
+		DB07E8C41E8010560008C1E1 /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DB07E8C31E8010560008C1E1 /* OpenGLES.framework */; };
+		DB07E8C61E8010680008C1E1 /* SafariServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DB07E8C51E8010680008C1E1 /* SafariServices.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		24DD6D1B1134B66800162E58 /* titanium.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = titanium.xcconfig; sourceTree = "<group>"; };
+		36A2D4081F1BB2A3008202CA /* GoogleMobileAds.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GoogleMobileAds.framework; path = platform/GoogleMobileAds.framework; sourceTree = "<group>"; };
+		36C9C5551F1C30100004001B /* NetBirdirbirAdmobrewardedAdProxy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = NetBirdirbirAdmobrewardedAdProxy.h; path = Classes/NetBirdirbirAdmobrewardedAdProxy.h; sourceTree = "<group>"; };
+		36C9C5561F1C30100004001B /* NetBirdirbirAdmobrewardedAdProxy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = NetBirdirbirAdmobrewardedAdProxy.m; path = Classes/NetBirdirbirAdmobrewardedAdProxy.m; sourceTree = "<group>"; };
+		36D23E811F1B9BE600476567 /* EventKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = EventKit.framework; path = System/Library/Frameworks/EventKit.framework; sourceTree = SDKROOT; };
+		36D23E831F1B9BEE00476567 /* EventKitUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = EventKitUI.framework; path = System/Library/Frameworks/EventKitUI.framework; sourceTree = SDKROOT; };
+		36D23E871F1BA1C800476567 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		36D23E891F1BA1CF00476567 /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
+		36D6E1231F1B9014004467C7 /* NetBirdirbirAdmobrewarded_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NetBirdirbirAdmobrewarded_Prefix.pch; sourceTree = "<group>"; };
+		36E0F9D11F1B8DD900D1EDFA /* NetBirdirbirAdmobrewardedModule.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = NetBirdirbirAdmobrewardedModule.h; path = Classes/NetBirdirbirAdmobrewardedModule.h; sourceTree = "<group>"; };
+		36E0F9D21F1B8DD900D1EDFA /* NetBirdirbirAdmobrewardedModuleAssets.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = NetBirdirbirAdmobrewardedModuleAssets.h; path = Classes/NetBirdirbirAdmobrewardedModuleAssets.h; sourceTree = "<group>"; };
+		36E0F9D31F1B8DD900D1EDFA /* NetBirdirbirAdmobrewardedModule.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = NetBirdirbirAdmobrewardedModule.m; path = Classes/NetBirdirbirAdmobrewardedModule.m; sourceTree = "<group>"; };
+		36E0F9D41F1B8DD900D1EDFA /* NetBirdirbirAdmobrewardedModuleAssets.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = NetBirdirbirAdmobrewardedModuleAssets.m; path = Classes/NetBirdirbirAdmobrewardedModuleAssets.m; sourceTree = "<group>"; };
+		3A4F268E1C68DDF7003E06CF /* iAd.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = iAd.framework; path = System/Library/Frameworks/iAd.framework; sourceTree = SDKROOT; };
+		AACBBE490F95108600F1A2B1 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		CE6C179F1982D1170017C788 /* AdSupport.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AdSupport.framework; path = System/Library/Frameworks/AdSupport.framework; sourceTree = SDKROOT; };
+		CE6C17A11982D12D0017C788 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		CE6C17A31982D13A0017C788 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		CE6C17A51982D1660017C788 /* CoreTelephony.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreTelephony.framework; path = System/Library/Frameworks/CoreTelephony.framework; sourceTree = SDKROOT; };
+		CE6C17A71982D1780017C788 /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
+		CE6C17A91982D1870017C788 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		D2AAC07E0554694100DB518D /* libNetBirdirbirAdmobrewarded.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libNetBirdirbirAdmobrewarded.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		DAD5D7CE12527E11009CF986 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		DAD5D7D112527E1A009CF986 /* MediaPlayer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MediaPlayer.framework; path = System/Library/Frameworks/MediaPlayer.framework; sourceTree = SDKROOT; };
+		DAD5D7D412527E2F009CF986 /* MessageUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MessageUI.framework; path = System/Library/Frameworks/MessageUI.framework; sourceTree = SDKROOT; };
+		DB07E8B61E8010000008C1E1 /* CoreMedia.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMedia.framework; path = System/Library/Frameworks/CoreMedia.framework; sourceTree = SDKROOT; };
+		DB07E8B71E8010000008C1E1 /* CoreMotion.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMotion.framework; path = System/Library/Frameworks/CoreMotion.framework; sourceTree = SDKROOT; };
+		DB07E8BA1E80100D0008C1E1 /* CoreVideo.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreVideo.framework; path = System/Library/Frameworks/CoreVideo.framework; sourceTree = SDKROOT; };
+		DB07E8BC1E80101A0008C1E1 /* GLKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GLKit.framework; path = System/Library/Frameworks/GLKit.framework; sourceTree = SDKROOT; };
+		DB07E8BE1E80101F0008C1E1 /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
+		DB07E8C11E80104D0008C1E1 /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
+		DB07E8C31E8010560008C1E1 /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
+		DB07E8C51E8010680008C1E1 /* SafariServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SafariServices.framework; path = System/Library/Frameworks/SafariServices.framework; sourceTree = SDKROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D2AAC07C0554694100DB518D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3A4F268F1C68DDF7003E06CF /* iAd.framework in Frameworks */,
+				36D23E8A1F1BA1CF00476567 /* WebKit.framework in Frameworks */,
+				36D23E881F1BA1C800476567 /* UIKit.framework in Frameworks */,
+				DB07E8C21E80104D0008C1E1 /* MobileCoreServices.framework in Frameworks */,
+				DAD5D7D512527E2F009CF986 /* MessageUI.framework in Frameworks */,
+				36D23E841F1B9BEE00476567 /* EventKitUI.framework in Frameworks */,
+				36D23E821F1B9BE600476567 /* EventKit.framework in Frameworks */,
+				CE6C17A01982D1170017C788 /* AdSupport.framework in Frameworks */,
+				DAD5D7CF12527E11009CF986 /* AudioToolbox.framework in Frameworks */,
+				CE6C17A21982D12D0017C788 /* AVFoundation.framework in Frameworks */,
+				CE6C17A41982D13A0017C788 /* CoreGraphics.framework in Frameworks */,
+				DB07E8B81E8010000008C1E1 /* CoreMedia.framework in Frameworks */,
+				DB07E8B91E8010000008C1E1 /* CoreMotion.framework in Frameworks */,
+				CE6C17A61982D1660017C788 /* CoreTelephony.framework in Frameworks */,
+				DB07E8BB1E80100D0008C1E1 /* CoreVideo.framework in Frameworks */,
+				AACBBE4A0F95108600F1A2B1 /* Foundation.framework in Frameworks */,
+				DB07E8BD1E80101A0008C1E1 /* GLKit.framework in Frameworks */,
+				DB07E8BF1E80101F0008C1E1 /* JavaScriptCore.framework in Frameworks */,
+				36A2D4091F1BB2A3008202CA /* GoogleMobileAds.framework in Frameworks */,
+				DB07E8C01E80103C0008C1E1 /* MediaPlayer.framework in Frameworks */,
+				DB07E8C41E8010560008C1E1 /* OpenGLES.framework in Frameworks */,
+				DB07E8C61E8010680008C1E1 /* SafariServices.framework in Frameworks */,
+				CE6C17A81982D1780017C788 /* StoreKit.framework in Frameworks */,
+				CE6C17AA1982D1870017C788 /* SystemConfiguration.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		034768DFFF38A50411DB9C8B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D2AAC07E0554694100DB518D /* libNetBirdirbirAdmobrewarded.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		0867D691FE84028FC02AAC07 /* admob */ = {
+			isa = PBXGroup;
+			children = (
+				08FB77AEFE84172EC02AAC07 /* Classes */,
+				32C88DFF0371C24200C91783 /* Other Sources */,
+				0867D69AFE84028FC02AAC07 /* Frameworks */,
+				034768DFFF38A50411DB9C8B /* Products */,
+			);
+			name = admob;
+			sourceTree = "<group>";
+		};
+		0867D69AFE84028FC02AAC07 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				36A2D4081F1BB2A3008202CA /* GoogleMobileAds.framework */,
+				36D23E891F1BA1CF00476567 /* WebKit.framework */,
+				36D23E871F1BA1C800476567 /* UIKit.framework */,
+				36D23E831F1B9BEE00476567 /* EventKitUI.framework */,
+				36D23E811F1B9BE600476567 /* EventKit.framework */,
+				DB07E8C51E8010680008C1E1 /* SafariServices.framework */,
+				DB07E8C31E8010560008C1E1 /* OpenGLES.framework */,
+				DB07E8C11E80104D0008C1E1 /* MobileCoreServices.framework */,
+				DB07E8BE1E80101F0008C1E1 /* JavaScriptCore.framework */,
+				DB07E8BC1E80101A0008C1E1 /* GLKit.framework */,
+				DB07E8BA1E80100D0008C1E1 /* CoreVideo.framework */,
+				DB07E8B61E8010000008C1E1 /* CoreMedia.framework */,
+				DB07E8B71E8010000008C1E1 /* CoreMotion.framework */,
+				3A4F268E1C68DDF7003E06CF /* iAd.framework */,
+				CE6C17A91982D1870017C788 /* SystemConfiguration.framework */,
+				CE6C17A71982D1780017C788 /* StoreKit.framework */,
+				CE6C17A51982D1660017C788 /* CoreTelephony.framework */,
+				CE6C17A31982D13A0017C788 /* CoreGraphics.framework */,
+				CE6C17A11982D12D0017C788 /* AVFoundation.framework */,
+				CE6C179F1982D1170017C788 /* AdSupport.framework */,
+				AACBBE490F95108600F1A2B1 /* Foundation.framework */,
+				DAD5D7CE12527E11009CF986 /* AudioToolbox.framework */,
+				DAD5D7D112527E1A009CF986 /* MediaPlayer.framework */,
+				DAD5D7D412527E2F009CF986 /* MessageUI.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		08FB77AEFE84172EC02AAC07 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				36E0F9D11F1B8DD900D1EDFA /* NetBirdirbirAdmobrewardedModule.h */,
+				36E0F9D21F1B8DD900D1EDFA /* NetBirdirbirAdmobrewardedModuleAssets.h */,
+				36E0F9D31F1B8DD900D1EDFA /* NetBirdirbirAdmobrewardedModule.m */,
+				36E0F9D41F1B8DD900D1EDFA /* NetBirdirbirAdmobrewardedModuleAssets.m */,
+				36C9C5551F1C30100004001B /* NetBirdirbirAdmobrewardedAdProxy.h */,
+				36C9C5561F1C30100004001B /* NetBirdirbirAdmobrewardedAdProxy.m */,
+			);
+			name = Classes;
+			sourceTree = "<group>";
+		};
+		32C88DFF0371C24200C91783 /* Other Sources */ = {
+			isa = PBXGroup;
+			children = (
+				36D6E1231F1B9014004467C7 /* NetBirdirbirAdmobrewarded_Prefix.pch */,
+				24DD6D1B1134B66800162E58 /* titanium.xcconfig */,
+			);
+			name = "Other Sources";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		D2AAC07A0554694100DB518D /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				36C9C5571F1C30100004001B /* NetBirdirbirAdmobrewardedAdProxy.h in Headers */,
+				36E0F9D51F1B8DD900D1EDFA /* NetBirdirbirAdmobrewardedModule.h in Headers */,
+				36E0F9D61F1B8DD900D1EDFA /* NetBirdirbirAdmobrewardedModuleAssets.h in Headers */,
+				36D6E1241F1B9014004467C7 /* NetBirdirbirAdmobrewarded_Prefix.pch in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		D2AAC07D0554694100DB518D /* admobrewarded */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1DEB921E08733DC00010E9CD /* Build configuration list for PBXNativeTarget "admobrewarded" */;
+			buildPhases = (
+				D2AAC07A0554694100DB518D /* Headers */,
+				D2AAC07B0554694100DB518D /* Sources */,
+				D2AAC07C0554694100DB518D /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = admobrewarded;
+			productName = admob;
+			productReference = D2AAC07E0554694100DB518D /* libNetBirdirbirAdmobrewarded.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		0867D690FE84028FC02AAC07 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0830;
+			};
+			buildConfigurationList = 1DEB922208733DC00010E9CD /* Build configuration list for PBXProject "admobrewarded-ios" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 1;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 0867D691FE84028FC02AAC07 /* admob */;
+			productRefGroup = 034768DFFF38A50411DB9C8B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D2AAC07D0554694100DB518D /* admobrewarded */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D2AAC07B0554694100DB518D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				36C9C5581F1C30100004001B /* NetBirdirbirAdmobrewardedAdProxy.m in Sources */,
+				36E0F9D81F1B8DD900D1EDFA /* NetBirdirbirAdmobrewardedModuleAssets.m in Sources */,
+				36E0F9D71F1B8DD900D1EDFA /* NetBirdirbirAdmobrewardedModule.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		1DEB921F08733DC00010E9CD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 24DD6D1B1134B66800162E58 /* titanium.xcconfig */;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DSTROOT = /tmp/TiAdmob.dst;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)/**",
+					"$(PROJECT_DIR)/platform/ios/**",
+					"$(PROJECT_DIR)/platform/**",
+					"$(PROJECT_DIR)/../platform",
+					"$(PROJECT_DIR)/platform",
+				);
+				GCC_C_LANGUAGE_STANDARD = c99;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = NetBirdirbirAdmobrewarded_Prefix.pch;
+				GCC_PREPROCESSOR_DEFINITIONS = "TI_VERSION=$(TI_VERSION)";
+				GCC_TREAT_WARNINGS_AS_ERRORS = NO;
+				GCC_VERSION = "";
+				GCC_WARN_ABOUT_RETURN_TYPE = NO;
+				GCC_WARN_MISSING_PARENTHESES = NO;
+				GCC_WARN_SHADOW = NO;
+				GCC_WARN_STRICT_SELECTOR_MATCH = NO;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_PARAMETER = NO;
+				GCC_WARN_UNUSED_VALUE = NO;
+				GCC_WARN_UNUSED_VARIABLE = NO;
+				HEADER_SEARCH_PATHS = (
+					"$(TITANIUM_BASE_SDK)",
+					"$(TITANIUM_BASE_SDK2)",
+					"~$(TITANIUM_BASE_SDK)",
+					"~$(TITANIUM_BASE_SDK2)",
+				);
+				INSTALL_PATH = /usr/local/lib;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(SRCROOT)",
+					"$(PROJECT_DIR)/platform",
+				);
+				OTHER_CFLAGS = (
+					"-DDEBUG",
+					"-DTI_POST_1_2",
+				);
+				OTHER_LDFLAGS = (
+					"-ObjC",
+					"-lGoogleMobileAds",
+				);
+				PRODUCT_NAME = NetBirdirbirAdmobrewarded;
+				PROVISIONING_PROFILE = "";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "";
+				RUN_CLANG_STATIC_ANALYZER = NO;
+				SDKROOT = iphoneos;
+				USER_HEADER_SEARCH_PATHS = "";
+			};
+			name = Debug;
+		};
+		1DEB922008733DC00010E9CD /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 24DD6D1B1134B66800162E58 /* titanium.xcconfig */;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = YES;
+				DSTROOT = /tmp/TiAdmob.dst;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)/**",
+					"$(PROJECT_DIR)/platform/ios/**",
+					"$(PROJECT_DIR)/platform/**",
+					"$(PROJECT_DIR)/../platform",
+					"$(PROJECT_DIR)/platform",
+				);
+				GCC_C_LANGUAGE_STANDARD = c99;
+				GCC_MODEL_TUNING = G5;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = NetBirdirbirAdmobrewarded_Prefix.pch;
+				GCC_PREPROCESSOR_DEFINITIONS = "TI_VERSION=$(TI_VERSION)";
+				GCC_TREAT_WARNINGS_AS_ERRORS = NO;
+				GCC_VERSION = "";
+				GCC_WARN_ABOUT_RETURN_TYPE = NO;
+				GCC_WARN_MISSING_PARENTHESES = NO;
+				GCC_WARN_SHADOW = NO;
+				GCC_WARN_STRICT_SELECTOR_MATCH = NO;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_PARAMETER = NO;
+				GCC_WARN_UNUSED_VALUE = NO;
+				GCC_WARN_UNUSED_VARIABLE = NO;
+				HEADER_SEARCH_PATHS = (
+					"$(TITANIUM_BASE_SDK)",
+					"$(TITANIUM_BASE_SDK2)",
+					"~$(TITANIUM_BASE_SDK)",
+					"~$(TITANIUM_BASE_SDK2)",
+				);
+				INSTALL_PATH = /usr/local/lib;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(SRCROOT)",
+					"$(PROJECT_DIR)/platform",
+				);
+				OTHER_CFLAGS = "-DTI_POST_1_2";
+				OTHER_LDFLAGS = (
+					"-ObjC",
+					"-lGoogleMobileAds",
+				);
+				PRODUCT_NAME = NetBirdirbirAdmobrewarded;
+				PROVISIONING_PROFILE = "";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "";
+				RUN_CLANG_STATIC_ANALYZER = NO;
+				SDKROOT = iphoneos;
+				USER_HEADER_SEARCH_PATHS = "";
+			};
+			name = Release;
+		};
+		1DEB922308733DC00010E9CD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 24DD6D1B1134B66800162E58 /* titanium.xcconfig */;
+			buildSettings = {
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DSTROOT = /tmp/TiAdmob.dst;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = c99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = NetBirdirbirAdmobrewarded_Prefix.pch;
+				GCC_PREPROCESSOR_DEFINITIONS = "TI_VERSION=$(TI_VERSION)";
+				GCC_TREAT_WARNINGS_AS_ERRORS = NO;
+				GCC_VERSION = "";
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = NO;
+				GCC_WARN_MISSING_PARENTHESES = NO;
+				GCC_WARN_SHADOW = NO;
+				GCC_WARN_STRICT_SELECTOR_MATCH = NO;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_PARAMETER = NO;
+				GCC_WARN_UNUSED_VALUE = NO;
+				GCC_WARN_UNUSED_VARIABLE = NO;
+				INSTALL_PATH = /usr/local/lib;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				ONLY_ACTIVE_ARCH = YES;
+				OTHER_CFLAGS = (
+					"-DDEBUG",
+					"-DTI_POST_1_2",
+				);
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = TiAdmob;
+				PROVISIONING_PROFILE = "";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "";
+				RUN_CLANG_STATIC_ANALYZER = NO;
+				SDKROOT = iphoneos;
+				USER_HEADER_SEARCH_PATHS = "";
+			};
+			name = Debug;
+		};
+		1DEB922408733DC00010E9CD /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 24DD6D1B1134B66800162E58 /* titanium.xcconfig */;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				DSTROOT = /tmp/TiAdmob.dst;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = c99;
+				GCC_MODEL_TUNING = G5;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = NetBirdirbirAdmobrewarded_Prefix.pch;
+				GCC_PREPROCESSOR_DEFINITIONS = "TI_VERSION=$(TI_VERSION)";
+				GCC_TREAT_WARNINGS_AS_ERRORS = NO;
+				GCC_VERSION = "";
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = NO;
+				GCC_WARN_MISSING_PARENTHESES = NO;
+				GCC_WARN_SHADOW = NO;
+				GCC_WARN_STRICT_SELECTOR_MATCH = NO;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_PARAMETER = NO;
+				GCC_WARN_UNUSED_VALUE = NO;
+				GCC_WARN_UNUSED_VARIABLE = NO;
+				INSTALL_PATH = /usr/local/lib;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				OTHER_CFLAGS = "-DTI_POST_1_2";
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = TiAdmob;
+				PROVISIONING_PROFILE = "";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "";
+				RUN_CLANG_STATIC_ANALYZER = NO;
+				SDKROOT = iphoneos;
+				USER_HEADER_SEARCH_PATHS = "";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1DEB921E08733DC00010E9CD /* Build configuration list for PBXNativeTarget "admobrewarded" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1DEB921F08733DC00010E9CD /* Debug */,
+				1DEB922008733DC00010E9CD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1DEB922208733DC00010E9CD /* Build configuration list for PBXProject "admobrewarded-ios" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1DEB922308733DC00010E9CD /* Debug */,
+				1DEB922408733DC00010E9CD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 0867D690FE84028FC02AAC07 /* Project object */;
+}
