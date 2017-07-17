@@ -3,6 +3,7 @@
 /.settings
 /bin
 /android/build
+/android/dist
 /ios/build
 /ios/admobrewarded-ios.xcodeproj/xcuserdata
 /ios/*.zip
