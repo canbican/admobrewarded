@@ -1,5 +1,7 @@
 # admobrewarded Module
 
+[![gitTio](http://gitt.io/badge.svg)](http://gitt.io/component/net.birdirbir.admobrewarded)
+
 ## Description
 
 This module provides full screen Admob rewarded ads.
