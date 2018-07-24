@@ -2,9 +2,9 @@
 # this is your module manifest and used by Titanium
 # during compilation, packaging, distribution, etc.
 #
-version: 0.2
-apiversion: 3
-architectures: armeabi-v7a x86
+version: 0.4
+apiversion: 4
+architectures: armeabi-v7a x86 arm64-v8a
 description: Admob Rewarded Ads
 author: Can Bican
 license: Apache License, Version 2.0
@@ -15,4 +15,4 @@ name: admobrewarded
 moduleid: net.birdirbir.admobrewarded
 guid: 67516e34-8019-4df4-a03f-ff706d4b2a26
 platform: android
-minsdk: 6.1.1.GA
+minsdk: 7.0.0.GA
